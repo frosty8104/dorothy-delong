@@ -51,10 +51,12 @@ header {
 #home h1 {
     color: #558b6e;
     font-family: 'Great Vibes', cursive;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin: 0;
 }
 #home img {
-    width: 20%;
+    padding: 0 0 0 5%;
+    width: 15%;
 }
 img {
     width: 100%;
@@ -65,7 +67,6 @@ img {
     display: flex;
     flex-flow: row wrap;
     font-size: 1em;
-    justify-content: center;
     width: 90%;
 }
 #home nav {
@@ -83,6 +84,8 @@ img {
 }
 #home nav ul li a {
     color: #558b6e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
