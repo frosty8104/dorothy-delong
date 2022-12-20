@@ -1,3 +1,4 @@
+/***** BASE STYLES *****/
 html {
     font-size: 16px;
 }
@@ -38,7 +39,7 @@ p {
 }
 /***** HEADER, FOOTER *****/
 header {
-    padding: 5% 0 5% 0;
+    padding: 5% 0 2.5% 0;
 }
 #home {
     align-items: center;
@@ -67,28 +68,27 @@ img {
     justify-content: center;
     width: 90%;
 }
-nav {
+#home nav {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     width: 60%;
 }
-nav ul {
+#home nav ul {
     padding: 0;
-    width: 100%;
 }
-nav ul li {
+#home nav ul li {
     display: inline-block;
 }
-nav ul li a {
+#home nav ul li a {
     color: #558b6e;
-    display: block;
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
 }
 footer {
-    padding: 2% 0 5% 0;
+    padding: 0 0 5% 0;
 }
 #contact {
     align-items: center;
@@ -105,6 +105,7 @@ footer {
     width: 90%;
 }
 #contact ul {
+    padding: 0;
     width: 90%;
 }
 #contact ul li {
@@ -123,6 +124,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    padding: 0 0 5% 0;
 }
 #about h2 {
     color: #704c5e;
@@ -167,6 +169,7 @@ img {
 }
 
 @media (min-width: 768px) {
+    /****** BASE STYLES *****/
     h1 {
       font-size: 2.5em;
     }
@@ -226,6 +229,7 @@ img {
     }
   }
   @media (min-width: 1200px) {
+    /***** BASE STYLES *****/
     h1 {
       font-size: 3.5em;
     }
