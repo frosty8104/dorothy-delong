@@ -37,9 +37,9 @@ a {
 p {
     font-size: 1em;
 }
-/***** HEADER, FOOTER *****/
+/***** HEADER *****/
 header {
-    padding: 5% 0 2.5% 0;
+    padding: 5% 0 0 0;
 }
 #home {
     align-items: center;
@@ -52,11 +52,10 @@ header {
     color: #558b6e;
     font-family: 'Great Vibes', cursive;
     font-size: 1.5em;
-    margin: 0;
 }
 #home img {
-    padding: 0 0 0 5%;
-    width: 15%;
+    padding: 0 5% 0 0;
+    width: 10%;
 }
 img {
     width: 100%;
@@ -67,7 +66,6 @@ img {
     display: flex;
     flex-flow: row wrap;
     font-size: 1em;
-    width: 90%;
 }
 #home nav {
     align-items: center;
@@ -80,7 +78,7 @@ img {
     padding: 0;
 }
 #home nav ul li {
-    display: inline-block;
+    display: block;
 }
 #home nav ul li a {
     color: #558b6e;
@@ -90,6 +88,7 @@ img {
     text-decoration: none;
     text-transform: uppercase;
 }
+/***** FOOTER *****/
 footer {
     padding: 0 0 5% 0;
 }
@@ -97,24 +96,41 @@ footer {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 90%;
 }
-#contact h2 {
+.info,
+.social {
+    width: 45%;
+}
+.info h2,
+.social h2 {
     color: #704c5e;
-    width: 90%;
+    font-size: 1em;
+    font-weight: bold;
 }
-#contact p {
+.info p,
+.social ul {
     color: #704c5e;
-    width: 90%;
 }
-#contact ul {
-    padding: 0;
-    width: 90%;
+.social h2 {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0 0 15%;
 }
-#contact ul li {
+.social ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0 0 4%;
+    width: 100%;
+}
+.social ul li {
     display: inline-block;
+    padding: 0 0 0 10%;
 }
-#contact ul li i {
+.social ul li i {
     color: #558b6e;
     font-size: 1.5em;
 }
@@ -159,9 +175,6 @@ img {
     color: #558b6e;
     width: 90%;
 }
-.photos img {
-    width: 90%;
-}
 img {
     width: 100%;
 }
@@ -170,7 +183,7 @@ img {
     font-size: 0.875em;
     width: 90%;
 }
-
+/***** TABLET *****/
 @media (min-width: 768px) {
     /****** BASE STYLES *****/
     h1 {
@@ -182,55 +195,95 @@ img {
     p {
       font-size: 1em;
     }
-    /***** HEADER, FOOTER *****/
+    /***** HEADER *****/
     #home h1 {
         font-size: 2.5em;
     }
+    #home img {
+        width: 15%;
+    }
     #home p {
         font-size: 1em;
+        padding: 0 0 0 10%;
+        width: 60%;
     }
-    nav {
+    #home nav {
 
     }
-    nav ul {
+    #home nav ul {
         padding: 0;
+        width: 80%;
     }
-    nav ul li {
+    #home nav ul li {
         display: inline-block;
+        padding: 0 0 0 5%;
     }
-    nav ul li a {
+    #home nav ul li a {
         color: #558b6e;
-        display: block;
         text-decoration: none;
         text-transform: uppercase;
     }
-    #contact h2 {
+    /***** FOOTER *****/
+    .info,
+    .social {
+        width: 45%;
+    }
+    .info h2,
+    .social h2 {
         font-size: 1.5em;
     }
-    #contact p {
+    .info p
+    .social p {
         font-size: 1em;
+        width: 100%;
     }
-    #contact ul {
-
+   .social ul {
+        
     }
-    #contact ul li {
-
+    .social ul li {
+        padding: 0 0 0 5%;
     }
-    #contact ul li i {
+    .social ul li i {
         font-size: 2em;
     }
     /***** ABOUT *****/
-    #about p {
+    #about {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 90%;
+    }
+    #about img {
         font-size: 1em;
+        width: 40%;
+    }
+    #about p {
+        width: 40%;
     }
     /***** WORK *****/
-    .photos h2 {
+    #work h2 {
         font-size: 1.5em;
     }
-    .photos p {
+    .photos {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 0 0 0 5%;
+        width: 90%;
+    }
+    .photos .cap {
+        width: 45%;
+    }
+    .photos .cap img {
+        width: 100%
+    }
+    .photos .cap p {
         font-size: 1em;
     }
   }
+  /***** DESKTOP *****/
   @media (min-width: 1200px) {
     /***** BASE STYLES *****/
     h1 {
@@ -248,32 +301,36 @@ img {
     }
     #home p {
         font-size: 1.25em;
+        padding: 0 0 0 35%;
+        width: 60%;
     }
-    nav {
-
+    #home nav {
+        width: 60%;
     }
-    nav ul {
+    #home nav ul {
         padding: 0;
     }
-    nav ul li {
+    #home nav ul li {
         display: inline-block;
+        padding: 0 0 0 2%;
     }
-    nav ul li a {
+    #home nav ul li a {
         font-size: 2em;
     }
-    #contact h2 {
+    .info h2,
+    .social h2 {
         font-size: 2em;
     }
-    #contact p {
+    .info p {
         font-size: 1.25em;
     }
-    #contact ul {
+    .social ul {
 
     }
-    #contact ul li {
+    .social ul li {
 
     }
-    #contact ul li i {
+    .social ul li i {
         font-size: 3em;
     }
     /***** ABOUT *****/
